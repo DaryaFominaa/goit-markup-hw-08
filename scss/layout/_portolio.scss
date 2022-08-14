@@ -1,9 +1,7 @@
 .portfolio{
    @extend %list-reset;
 }
-.portfolio__item {
-    // --card-item: 1;
-}
+
 
 .portfolio__link {
     @extend %link-reset;

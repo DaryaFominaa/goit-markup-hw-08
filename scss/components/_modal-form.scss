@@ -3,10 +3,18 @@
     
     &__title {
     display: block;
-
-    @include fonts (20px, 23px, 700);
+    @include fonts(20px, 30px, 700);
     text-align: center;
     color: var(--title-text-color);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+@include mq(desk) {
+         @include fonts (23px, 700);
+    }
+
+   
+    
 }
 }
 
