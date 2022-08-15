@@ -7,6 +7,10 @@
 }
 }
 
+.checkbox__icon{
+    min-width: 16px;
+
+}
 .checkbox__icon--check {
     opacity: 0;
     transition: opacity var(--transition);
@@ -26,7 +30,12 @@
 }
 
 .checkbox__describtion{
-@include fonts (14px, 24px);
+@include fonts (12px, 14px);
+
+@include mq(desk) {
+        @include fonts (14px, 24px);
+    }
+
 }
 
 .checkbox__link {

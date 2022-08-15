@@ -4,7 +4,7 @@
 
   font-weight: $fw;
   font-size: $fs;
-  line-height: calc($lh / $fs);
+  line-height: decimal-round(#{$lh} / #{$fs});
   letter-spacing: $ls;
 }
 

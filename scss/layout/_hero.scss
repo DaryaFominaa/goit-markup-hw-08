@@ -39,9 +39,8 @@
 
   &__button {
     padding: 10px 24px;
+    padding: 10px 32px;
 
-    @include mq(desk) {
-      padding: 10px 32px;
-    }
+    
   }
 }

@@ -7,14 +7,11 @@
     text-align: center;
     color: var(--title-text-color);
     text-align: center;
-    letter-spacing: 0.03em;
-
-@include mq(desk) {
-         @include fonts (23px, 700);
-    }
-
-   
     
+    @include mq(desk) {
+         @include fonts (20px, 23px, 700);
+    }
+      
 }
 }
 
@@ -58,12 +55,14 @@
     transition: border var(--transition);
 
         &:hover,
-        &:focus{
+        &:focus,
+        &:active {
         border: 1px solid var(--accent-color);
         }
 
         &:focus-within+.modal-form__icon,
-        &:hover+.modal-form__icon {
+        &:hover+.modal-form__icon,
+        &:active+.modal-form__icon {
         fill: var(--accent-color);
 }
 }
@@ -83,7 +82,8 @@
     transition: border var(--transition);
     
         &:hover,
-        &:focus {
+        &:focus,
+        &:active {
     border: 1px solid var(--accent-color);
 
         &::placeholder {
