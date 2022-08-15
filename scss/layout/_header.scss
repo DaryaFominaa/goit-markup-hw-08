@@ -1,16 +1,10 @@
-
-
-
-.header{
-
-@include fonts (14px, 16px, 500, 0.02em);
-  &__container {  
-
+.header {
+  @include fonts(14px, 16px, 500, 0.02em);
+  &__container {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ececec;
-   
-    }
+  }
 
   &__logo--accent {
     color: var(--accent-color);
@@ -18,12 +12,9 @@
 }
 
 .header__link {
-  
-  @extend %link-reset; 
+  @extend %link-reset;
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   transition: color var(--transition);
 
@@ -36,16 +27,47 @@
   &:focus .header__icon {
     fill: var(--accent-color);
   }
-   
+  @include mq(desk) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header__list {
+  @include mq(mob-only) {
+    display: none;
+  }
   @extend %list-reset;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  gap: 30px;
-}
+  
+  @include mq(tab-only) {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+    height: 100%;
+
+    margin-top: 21px;
+    margin-bottom: 21px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.02em;
+  }
+
+  @include mq(desk) {
+    @extend %list-reset;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      gap: 30px;
+    }
+    
+  }
+
 
 .header__icon {
   fill: var(--primary-text-color);
