@@ -26,7 +26,7 @@
         >
 
         <button class="menu__button menu__button--open" type="button" data-menu-open>
-          <svg width="40" height="40">
+          <svg width="40" height="40" >
             <use
               class="menu__icon menu__icon--burger"
               href="./images/symbol-defs1.svg#icon-menu-burger"
@@ -95,22 +95,68 @@
             <li class="portfolio__item card-item">
               <a href="" class="portfolio__link">
                 <div class="portolio__wrapper">
-                  <img
-                    class="portfolio__img"
-                    srcset="
-                      ./images/portfolio-w/img-1-354.jpg 354w,
-                      ./images/portfolio-w/img-1-370.jpg 370w,
-                      ./images/portfolio-w/img-1-450.jpg 450w,
-                      ./images/portfolio-w/img-1-708.jpg 708w,
-                      ./images/portfolio-w/img-1-740.jpg 740w,
-                      ./images/portfolio-w/img-1-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-                    src="./images/portfolio-w/img-1-354.jpg"
-                    alt="Сайт технокряк на мониторе ноутбука"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_lg.webp 1x,
+                        ./images/portfolio/img-1@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_lg.jpg 1x,
+                        ./images/portfolio/img-1@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- TAB -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_md.webp 1x,
+                        ./images/portfolio/img-1@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_md.jpg 1x,
+                        ./images/portfolio/img-1@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- MOB -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_sm.webp 1x,
+                        ./images/portfolio/img-1@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_sm.jpg 1x,
+                        ./images/portfolio/img-1@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img-1@1x_sm.jpg"
+                      alt="Сайт технокряк на мониторе ноутбука"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="portolio__overlay">
                     <p class="portolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -129,22 +175,67 @@
             <li class="portfolio__item card-item">
               <a href="" class="portfolio__link">
                 <div class="portolio__wrapper">
-                  <img
-                    class="portfolio__img"
-                    srcset="
-                      ./images/portfolio-w/img-2-354.jpg 354w,
-                      ./images/portfolio-w/img-2-370.jpg 370w,
-                      ./images/portfolio-w/img-2-450.jpg 450w,
-                      ./images/portfolio-w/img-2-708.jpg 708w,
-                      ./images/portfolio-w/img-2-740.jpg 740w,
-                      ./images/portfolio-w/img-2-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-                    src="./images/portfolio-w/img-2-354.jpg"
-                    alt="Два боскетболиста с мячем на постере"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_lg.webp 1x,
+                        ./images/portfolio/img-2@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_lg.jpg 1x,
+                        ./images/portfolio/img-2@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- TAB -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_md.webp 1x,
+                        ./images/portfolio/img-2@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_md.jpg 1x,
+                        ./images/portfolio/img-2@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- MOB -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_sm.webp 1x,
+                        ./images/portfolio/img-2@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_sm.jpg 1x,
+                        ./images/portfolio/img-2@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img-2@1x_sm.jpg"
+                      alt="Два боскетболиста с мячем на постере"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <div class="portolio__overlay">
                     <p class="portolio__text">
@@ -163,22 +254,67 @@
             <li class="portfolio__item card-item">
               <a href="" class="portfolio__link">
                 <div class="portolio__wrapper">
-                  <img
-                    class="portfolio__img"
-                    srcset="
-                      ./images/portfolio-w/img-3-354.jpg 354w,
-                      ./images/portfolio-w/img-3-370.jpg 370w,
-                      ./images/portfolio-w/img-3-450.jpg 450w,
-                      ./images/portfolio-w/img-3-708.jpg 708w,
-                      ./images/portfolio-w/img-3-740.jpg 740w,
-                      ./images/portfolio-w/img-3-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-                    src="./images/portfolio-w/img-3-354.jpg"
-                    alt="Логотип Ресторана Seafood"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_lg.webp 1x,
+                        ./images/portfolio/img-3@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_lg.jpg 1x,
+                        ./images/portfolio/img-3@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- TAB -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_md.webp 1x,
+                        ./images/portfolio/img-3@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_md.jpg 1x,
+                        ./images/portfolio/img-3@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- MOB -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_sm.webp 1x,
+                        ./images/portfolio/img-3@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_sm.jpg 1x,
+                        ./images/portfolio/img-3@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img-3@1x_sm.jpg"
+                      alt="Логотип Ресторана Seafood"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <div class="portolio__overlay">
                     <p class="portolio__text">
@@ -197,22 +333,67 @@
             <li class="portfolio__item card-item">
               <a href="" class="portfolio__link">
                 <div class="portolio__wrapper">
-                  <img
-                    class="portfolio__img"
-                    srcset="
-                      ./images/portfolio-w/img-4-354.jpg 354w,
-                      ./images/portfolio-w/img-4-370.jpg 370w,
-                      ./images/portfolio-w/img-4-450.jpg 450w,
-                      ./images/portfolio-w/img-4-708.jpg 708w,
-                      ./images/portfolio-w/img-4-740.jpg 740w,
-                      ./images/portfolio-w/img-4-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-                    src="./images/portfolio-w/img-4-354.jpg"
-                    alt="Наушники"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_lg.webp 1x,
+                        ./images/portfolio/img-4@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_lg.jpg 1x,
+                        ./images/portfolio/img-4@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- TAB -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_md.webp 1x,
+                        ./images/portfolio/img-4@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_md.jpg 1x,
+                        ./images/portfolio/img-4@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- MOB -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_sm.webp 1x,
+                        ./images/portfolio/img-4@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_sm.jpg 1x,
+                        ./images/portfolio/img-4@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img-4@1x_sm.jpg"
+                      alt="Наушники"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <div class="portolio__overlay">
                     <p class="portolio__text">
@@ -231,22 +412,67 @@
             <li class="portfolio__item card-item">
               <a href="" class="portfolio__link">
                 <div class="portolio__wrapper">
-                  <img
-                    class="portfolio__img"
-                    srcset="
-                      ./images/portfolio-w/img-5-354.jpg 354w,
-                      ./images/portfolio-w/img-5-370.jpg 370w,
-                      ./images/portfolio-w/img-5-450.jpg 450w,
-                      ./images/portfolio-w/img-5-708.jpg 708w,
-                      ./images/portfolio-w/img-5-740.jpg 740w,
-                      ./images/portfolio-w/img-5-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-                    src="./images/portfolio-w/img-5-354.jpg"
-                    alt="Пример коробок"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_lg.webp 1x,
+                        ./images/portfolio/img-5@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_lg.jpg 1x,
+                        ./images/portfolio/img-5@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- TAB -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_md.webp 1x,
+                        ./images/portfolio/img-5@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_md.jpg 1x,
+                        ./images/portfolio/img-5@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- MOB -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_sm.webp 1x,
+                        ./images/portfolio/img-5@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_sm.jpg 1x,
+                        ./images/portfolio/img-5@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img-5@1x_sm.jpg"
+                      alt="Пример коробок"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <div class="portolio__overlay">
                     <p class="portolio__text">
@@ -265,22 +491,67 @@
             <li class="portfolio__item card-item">
               <a href="" class="portfolio__link">
                 <div class="portolio__wrapper">
-                  <img
-                    class="portfolio__img"
-                    srcset="
-                      ./images/portfolio-w/img-6-354.jpg 354w,
-                      ./images/portfolio-w/img-6-370.jpg 370w,
-                      ./images/portfolio-w/img-6-450.jpg 450w,
-                      ./images/portfolio-w/img-6-708.jpg 708w,
-                      ./images/portfolio-w/img-6-740.jpg 740w,
-                      ./images/portfolio-w/img-6-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-                    src="./images/portfolio-w/img-6-354.jpg"
-                    alt="Сайт на мониторе"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_lg.webp 1x,
+                        ./images/portfolio/img-6@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_lg.jpg 1x,
+                        ./images/portfolio/img-6@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- TAB -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_md.webp 1x,
+                        ./images/portfolio/img-6@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_md.jpg 1x,
+                        ./images/portfolio/img-6@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- MOB -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_sm.webp 1x,
+                        ./images/portfolio/img-6@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_sm.jpg 1x,
+                        ./images/portfolio/img-6@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img-6@1x_sm.jpg"
+                      alt="Сайт на мониторе"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <div class="portolio__overlay">
                     <p class="portolio__text">
@@ -300,22 +571,67 @@
             <li class="portfolio__item card-item">
               <a href="" class="portfolio__link">
                 <div class="portolio__wrapper">
-                  <img
-                    class="portfolio__img"
-                    srcset="
-                      ./images/portfolio-w/img-7-354.jpg 354w,
-                      ./images/portfolio-w/img-7-370.jpg 370w,
-                      ./images/portfolio-w/img-7-450.jpg 450w,
-                      ./images/portfolio-w/img-7-708.jpg 708w,
-                      ./images/portfolio-w/img-7-740.jpg 740w,
-                      ./images/portfolio-w/img-7-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-                    src="./images/portfolio-w/img-7-354.jpg"
-                    alt="Разворот журнала"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_lg.webp 1x,
+                        ./images/portfolio/img-7@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_lg.jpg 1x,
+                        ./images/portfolio/img-7@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- TAB -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_md.webp 1x,
+                        ./images/portfolio/img-7@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_md.jpg 1x,
+                        ./images/portfolio/img-7@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- MOB -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_sm.webp 1x,
+                        ./images/portfolio/img-7@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_sm.jpg 1x,
+                        ./images/portfolio/img-7@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img-7@1x_sm.jpg"
+                      alt="Разворот журнала"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <div class="portolio__overlay">
                     <p class="portolio__text">
@@ -334,22 +650,68 @@
             <li class="portfolio__item card-item">
               <a href="" class="portfolio__link">
                 <div class="portolio__wrapper">
-                  <img
-                    class="portfolio__img"
-                    srcset="
-                      ./images/portfolio-w/img-8-354.jpg 354w,
-                      ./images/portfolio-w/img-8-370.jpg 370w,
-                      ./images/portfolio-w/img-8-450.jpg 450w,
-                      ./images/portfolio-w/img-8-708.jpg 708w,
-                      ./images/portfolio-w/img-8-740.jpg 740w,
-                      ./images/portfolio-w/img-8-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-                    src="./images/portfolio-w/img-8-354.jpg"
-                    alt="Пример бирки для одежды"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_lg.webp 1x,
+                        ./images/portfolio/img-8@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_lg.jpg 1x,
+                        ./images/portfolio/img-8@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- TAB -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_md.webp 1x,
+                        ./images/portfolio/img-8@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_md.jpg 1x,
+                        ./images/portfolio/img-8@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- MOB -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_sm.webp 1x,
+                        ./images/portfolio/img-8@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_sm.jpg 1x,
+                        ./images/portfolio/img-8@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img-8@1x_sm.jpg"
+                      alt="Пример бирки для одежды"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="portolio__overlay">
                     <p class="portolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -368,21 +730,67 @@
             <li class="portfolio__item card-item">
               <a href="" class="portfolio__link">
                 <div class="portolio__wrapper">
-                  <img
-                    class="portfolio__img"
-                    srcset="
-                      ./images/portfolio-w/img-9-354.jpg 354w,
-                      ./images/portfolio-w/img-9-370.jpg 370w,
-                      ./images/portfolio-w/img-9-450.jpg 450w,
-                      ./images/portfolio-w/img-9-708.jpg 708w,
-                      ./images/portfolio-w/img-9-740.jpg 740w,
-                      ./images/portfolio-w/img-9-900.jpg 900w"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-                    src="./images/portfolio-w/img-9-354.jpg"
-                    alt="Ноутбук с сайтом"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_lg.webp 1x,
+                        ./images/portfolio/img-9@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_lg.jpg 1x,
+                        ./images/portfolio/img-9@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- TAB -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_md.webp 1x,
+                        ./images/portfolio/img-9@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_md.jpg 1x,
+                        ./images/portfolio/img-9@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- MOB -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_sm.webp 1x,
+                        ./images/portfolio/img-9@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_sm.jpg 1x,
+                        ./images/portfolio/img-9@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img-9@1x_sm.jpg"
+                      alt="Ноутбук с сайтом"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portolio__overlay">
                     <p class="portolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -501,7 +909,9 @@
             <a href="./index.html" class="mobile-nav__link">Студія</a>
           </li>
           <li class="mobile-nav-item">
-            <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+            <a href="./portfolio.html" class="mobile-nav__link mobile-nav__link--current"
+              >Портфоліо</a
+            >
           </li>
           <li class="mobile-nav-item">
             <a href="" class="mobile-nav__link">Контакти</a>

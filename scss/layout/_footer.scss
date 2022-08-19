@@ -33,28 +33,29 @@
 
   @include mq(tab) {
     display: flex;
-    margin-right: auto;
+    // margin-right: auto;
     margin-bottom: 0;
   }
 
   @include mq(desk) {
+    align-items: flex-start;
     margin-bottom: 0;
     margin-right: 70px;
   }
 }
 .footer__wrap {
+  margin-bottom: 60px;
 
   @include mq(tab-only) {
     display: flex;
     align-content: center;
-    justify-content: center;
     align-items: flex-start;
-    margin-left: 61px;
-    margin-right: 75px;
+    justify-content: space-around;
   }
 
   @include mq(desk) {
     display: flex;
     align-items: baseline;
+    margin-bottom: 0;
   }
 }

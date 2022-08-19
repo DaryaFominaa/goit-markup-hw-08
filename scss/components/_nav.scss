@@ -15,7 +15,11 @@
     @extend %link-reset;
     position: relative;
     color: var(--title-text-color);
-    height: 48px;
+
+    @include mq(tab) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
     &--current::after {
       content: '';
@@ -25,7 +29,7 @@
       width: 100%;
       height: 4px;
       left: 0;
-      bottom: -18px;
+      bottom: 0;
     }
 
     @include mq(desk) {

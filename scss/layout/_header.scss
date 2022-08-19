@@ -2,6 +2,7 @@
   @include fonts(14px, 16px, 500, 0.02em);
   &__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ececec;
   }
@@ -27,9 +28,24 @@
   &:focus .header__icon {
     fill: var(--accent-color);
   }
+
   @include mq(desk) {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+
+.header__icon--envelope {
+  @include mq(desk) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.header__icon--smartphone {
+  @include mq(desk) {
+    width: 10px;
+    height: 16px;
   }
 }
 
@@ -38,19 +54,16 @@
     display: none;
   }
   @extend %list-reset;
-  
+
   @include mq(tab-only) {
-    
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-left: auto;
     gap: 10px;
     height: 100%;
-
-    margin-top: 21px;
-    margin-bottom: 21px;
-
+    padding-top: 21px;
+    padding-bottom: 21px;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -60,14 +73,12 @@
 
   @include mq(desk) {
     @extend %list-reset;
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      gap: 30px;
-    }
-    
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 30px;
   }
-
+}
 
 .header__icon {
   fill: var(--primary-text-color);

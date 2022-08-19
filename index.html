@@ -21,9 +21,10 @@
 
     <header class="header">
       <div class="header__container container">
-        <a class="header__logo logo" href="./index.html"
-          ><span class="header__logo header__logo--accent">Web</span>Studio</a
-        >
+        <a class="header__logo logo" href="./index.html">
+          <span class="header__logo header__logo--accent">Web</span
+          ><span class="header__logo">Studio</span>
+        </a>
 
         <button class="menu__button menu__button--open" type="button" data-menu-open>
           <svg width="40" height="40">
@@ -51,7 +52,7 @@
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="mailto:info@devstudio.com">
-              <svg width="16" height="12" class="header__icon">
+              <svg width="14" height="10" class="header__icon header__icon--envelope">
                 <use href="./images/symbol-defs1.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -59,7 +60,7 @@
           </li>
           <li class="header__item">
             <a class="header__link" href="tel:+380961111111">
-              <svg width="10" height="16" class="header__icon">
+              <svg width="10" height="14" class="header__icon header__icon--smartphone">
                 <use href="./images/symbol-defs1.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -72,7 +73,7 @@
     <!-- Hero -->
     <main>
       <section class="hero section">
-        <div class="hero__wrapper">
+        <div class="hero__container container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__button button" type="button" data-modal-open>
             Замовити послугу
@@ -126,18 +127,32 @@
           <h2 class="example__title title">Чим ми займаємося</h2>
           <ul class="example__card-set card-set">
             <li class="example__card-item card-item">
-              <img
-                class="example__picture"
-                srcset="
-                  ./images/examples-w/img-1-370.jpg 370w,
-                  ./images/examples-w/img-1-740.jpg 740w
-                "
-                sizes="(min-width: 1200px) 370px, 100vw"
-                src=".images/examples-w/img-1-370.jpg"
-                alt="процес разработки сайта"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- DESKTOP -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/examples/img-1@1x_lg.webp 1x,
+                    ./images/examples/img-1@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/examples/img-1@1x_lg.jpg 1x,
+                    ./images/examples/img-1@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="example__picture"
+                  src="./images/examples/img-1@1x_lg.jpg"
+                  alt="процес разработки сайта"
+                  width="370"
+                  height="294"
+                />
+              </picture>
 
               <div class="example__wrapper">
                 <p class="example__text">Десктопні додатки</p>
@@ -145,35 +160,64 @@
             </li>
 
             <li class="example__card-item card-item">
-              <img
-                class="example__picture"
-                srcset="
-                  ./images/examples-w/img-2-370.jpg 370w,
-                  ./images/examples-w/img-2-740.jpg 740w
-                "
-                sizes="(min-width: 1200px) 370px, 100vw"
-                src=".images/examples-w/img-2-370.jpg"
-                alt="дизайн для мобильних приложений"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- DESKTOP -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/examples/img-2@1x_lg.webp 1x,
+                    ./images/examples/img-2@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/examples/img-2@1x_lg.jpg 1x,
+                    ./images/examples/img-2@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="example__picture"
+                  src="./images/examples/img-2@1x_lg.jpg"
+                  alt="дизайн для мобильних приложений"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="example__wrapper">
                 <p class="example__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="example__card-item card-item">
-              <img
-                class="example__picture"
-                srcset="
-                  ./images/examples-w/img-3-370.jpg 370w,
-                  ./images/examples-w/img-3-740.jpg 740w
-                "
-                sizes="(min-width: 1200px) 370px, 100vw"
-                src=".images/examples-w/img-3-370.jpg"
-                alt="подбор цветовой гаммы"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- DESKTOP -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/examples/img-3@1x_lg.webp 1x,
+                    ./images/examples/img-3@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/examples/img-3@1x_lg.jpg 1x,
+                    ./images/examples/img-3@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="example__picture"
+                  src="./images/examples/img-3@1x_lg.jpg"
+                  alt="подбор цветовой гаммы"
+                  width="370"
+                  height="294"
+                />
+              </picture>
 
               <div class="example__wrapper">
                 <p class="example__text">Дизайнерські рішення</p>
@@ -189,22 +233,49 @@
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__card-set card-set">
             <li class="team__card-item card-item">
-              <img
-                class="team__img"
-                srcset="
-                  ./images/team-w/img-1-270.jpg 270w,
-                  ./images/team-w/img-1-351.jpg 351w,
-                  ./images/team-w/img-1-450.jpg 450w,
-                  ./images/team-w/img-1-540.jpg 540w,
-                  ./images/team-w/img-1-702.jpg 702w,
-                  ./images/team-w/img-1-900.jpg 900w
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 351px, (max-width: 767px) 450px, 100vw"
-                src="./images/team-w/img-1-270.jpg"
-                alt="сотрудник компании Игорь"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <!-- DESKTOP -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-1@1x_lg.webp 1x, ./images/team/img-1@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-1@1x_lg.jpg 1x, ./images/team/img-1@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- TAB -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-1@1x_md.webp 1x, ./images/team/img-1@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-1@1x_md.jpg 1x, ./images/team/img-1@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- MOB -->
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-1@1x_sm.webp 1x, ./images/team/img-1@2x_sm.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-1@1x_sm.jpg 1x, ./images/team/img-1@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/img-1@1x_sm.jpg"
+                  alt="сотрудник компании Игорь"
+                  width="450"
+                  height="460"
+                />
+              </picture>
 
               <div class="team__describtion">
                 <h3 class="team__subtitle">Ігорь Дем'яненко</h3>
@@ -246,23 +317,49 @@
             </li>
 
             <li class="team__card-item card-item">
-              <img
-                class="team__img"
-                srcset="
-                  ./images/team-w/img-2-270.jpg 270w,
-                  ./images/team-w/img-2-351.jpg 351w,
-                  ./images/team-w/img-2-450.jpg 450w,
-                  ./images/team-w/img-2-540.jpg 540w,
-                  ./images/team-w/img-2-702.jpg 702w,
-                  ./images/team-w/img-2-900.jpg 900w
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 351px, (max-width: 767px) 450px, 100vw"
-                src="./images/team-w/img-2-270.jpg"
-                alt="сотрудник компании Ольга"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <!-- DESKTOP -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-2@1x_lg.webp 1x, ./images/team/img-2@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-2@1x_lg.jpg 1x, ./images/team/img-2@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- TAB -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-2@1x_md.webp 1x, ./images/team/img-2@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-2@1x_md.jpg 1x, ./images/team/img-2@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- MOB -->
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-2@1x_sm.webp 1x, ./images/team/img-2@2x_sm.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-2@1x_sm.jpg 1x, ./images/team/img-2@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
 
+                <img
+                  class="team__img"
+                  src="./images/team/img-2@1x_sm.jpg"
+                  alt="сотрудник компании Ольга"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__describtion">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -303,22 +400,49 @@
             </li>
 
             <li class="team__card-item card-item">
-              <img
-                class="team__img"
-                srcset="
-                  ./images/team-w/img-3-270.jpg 270w,
-                  ./images/team-w/img-3-351.jpg 351w,
-                  ./images/team-w/img-3-450.jpg 450w,
-                  ./images/team-w/img-3-540.jpg 540w,
-                  ./images/team-w/img-3-702.jpg 702w,
-                  ./images/team-w/img-3-900.jpg 900w
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 351px, (max-width: 767px) 450px, 100vw"
-                src="./images/team-w/img-3-270.jpg"
-                alt="сотрудник компании Николай"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <!-- DESKTOP -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-3@1x_lg.webp 1x, ./images/team/img-3@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-3@1x_lg.jpg 1x, ./images/team/img-3@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- TAB -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-3@1x_md.webp 1x, ./images/team/img-3@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-3@1x_md.jpg 1x, ./images/team/img-3@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- MOB -->
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-3@1x_sm.webp 1x, ./images/team/img-3@2x_sm.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-3@1x_sm.jpg 1x, ./images/team/img-3@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/img-3@1x_sm.jpg"
+                  alt="сотрудник компании Николай"
+                  width="450"
+                  height="460"
+                />
+              </picture>
 
               <div class="team__describtion">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
@@ -360,22 +484,49 @@
             </li>
 
             <li class="team__card-item card-item">
-              <img
-                class="team__img"
-                srcset="
-                  ./images/team-w/img-4-270.jpg 270w,
-                  ./images/team-w/img-4-351.jpg 351w,
-                  ./images/team-w/img-4-450.jpg 450w,
-                  ./images/team-w/img-4-540.jpg 540w,
-                  ./images/team-w/img-4-702.jpg 702w,
-                  ./images/team-w/img-4-900.jpg 900w
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 351px, (max-width: 767px) 450px, 100vw"
-                src="./images/team-w/img-4-270.jpg"
-                alt="сотрудник компании Михаил"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <!-- DESKTOP -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-4@1x_lg.webp 1x, ./images/team/img-4@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-4@1x_lg.jpg 1x, ./images/team/img-4@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- TAB -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-4@1x_md.webp 1x, ./images/team/img-4@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-4@1x_md.jpg 1x, ./images/team/img-4@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- MOB -->
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-4@1x_sm.webp 1x, ./images/team/img-4@2x_sm.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-4@1x_sm.jpg 1x, ./images/team/img-4@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/img-4@1x_sm.jpg"
+                  alt="сотрудник компании Михаил"
+                  width="450"
+                  height="460"
+                />
+              </picture>
 
               <div class="team__describtion">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
@@ -649,7 +800,7 @@
 
         <ul class="mobile-nav__list">
           <li class="mobile-nav__item">
-            <a href="./index.html" class="mobile-nav__link">Студія</a>
+            <a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студія</a>
           </li>
           <li class="mobile-nav-item">
             <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>

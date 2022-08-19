@@ -1,12 +1,19 @@
 @import './decimals';
 
-@mixin fonts($fs, $lh, $fw: 400, $ls: 0.03em) {
-
+@mixin fonts($fs, $lh, $fw: 400, $ls: 0.02em) {
   font-weight: $fw;
   font-size: $fs;
-  line-height: decimal-round(#{$lh} / #{$fs});
+  line-height: decimal-round($lh / $fs);
   letter-spacing: $ls;
 }
+
+// @mixin fonts($fs, $lh, $fw: 400, $ls: 0.03em) {
+
+//   font-weight: $fw;
+//   font-size: $fs;
+//   line-height: decimal-round({$lh} / {$fs});
+//   letter-spacing: $ls;
+// }
 
 // @include fonts (18px, 36px, 700, 0.06em);
 
