@@ -831,6 +831,9 @@ body.modal-open {
   border: none;
   cursor: pointer;
 }
+.menu__button:hover, .menu__button:focus, .menu__button:active {
+  fill: var(--accent-color);
+}
 .menu__overlay {
   position: fixed;
   top: 0;
