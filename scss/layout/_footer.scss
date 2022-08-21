@@ -49,7 +49,7 @@
   @include mq(tab-only) {
     display: flex;
     align-content: center;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: space-around;
   }
 

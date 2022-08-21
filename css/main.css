@@ -185,6 +185,9 @@ body.modal-open {
     padding-bottom: 32px;
   }
 }
+.nav__link--current {
+  color: var(--accent-color);
+}
 .nav__link--current::after {
   content: "";
   position: absolute;
@@ -869,6 +872,8 @@ body.modal-open {
   margin-left: auto;
   width: 100vw;
   height: 100vh;
+  overflow: auto;
+  gap: 64px;
   background-color: white;
   padding: 48px 40px;
 }
@@ -931,7 +936,6 @@ body.modal-open {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 64px;
   gap: 32px;
 }
 .menu-contacts__link {
@@ -1446,9 +1450,9 @@ body.modal-open {
     display: flex;
     -ms-flex-line-pack: center;
         align-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
